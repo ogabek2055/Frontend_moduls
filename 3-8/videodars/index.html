@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidoedars 3-8</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark">
+    <h1 class="text-center bg-light">Daily Routine</h1>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-3  offset-md-3">
+                    <div class="d-flex">
+                        <input id="name_routine" type="text" class="form-control" placeholder="Daily-routine"
+                            aria-label="Daily-routine" aria-describedby="basic-addon1">
+                        <input id="date_routine" type="date" class="rounded">
+                        <button type="button" onclick="addRoutine()" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+            </div>
+            <button onclick="showCard()" class="btn btn-success">Korzina</button>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div id="routine" class="d-flex justify-content-evenly my-5 flex-wrap">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div id="showRoutine" class="d-flex justify-content-evenly my-5 flex-wrap">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
