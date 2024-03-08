@@ -1,0 +1,31 @@
+.gmForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    max-width: 300px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    align-self: center;
+    background-color: rgb(163, 163, 163);
+}
+
+.gmForm input::placeholder {
+    color: white;
+}
+
+.gmForm input {
+    border: none;
+    color: rgb(0, 255, 98);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(81, 80, 80);
+    padding: 10px 24px;
+}
+
+h2 {
+    color: aqua;
+}
