@@ -1,7 +1,7 @@
 const userName = document.getElementById("name")
 const userPhone = document.getElementById("tel")
 
-let userArr = JSON.parse(localStorage.getItem("user")) || []
+let userArr = JSON.parse(localStorage.getItem("user")) || [];
 
 renderUser()
 
@@ -11,7 +11,7 @@ function addProduct() {
         name: userName.value,
         tel: userPhone.value,
     }
-    // console.log(userObj.id);
+    console.log(userObj);
     userArr.push(userObj)
     localStorage.setItem("user", JSON.stringify(userArr))
     userName.value = "";
@@ -20,7 +20,7 @@ function addProduct() {
 }
 
 function renderUser() {
-    const showing = document.getElementById("show")
+    let showing = document.getElementById("show")
     showing.innerHTML = "";
     for (let i = 0; i < userArr.length; i++) {
         const templete = `
@@ -38,13 +38,13 @@ function renderUser() {
 
 function deleted(id) {
     // console.log("working");
-    let newArray = [];
+    const newArray = [];
     for (let i = 0; i < userArr.length; i++) {
         if (userArr[i].id != id) {
-            newArray[newArray.length] = userArr[i]
+            newArray[newArray.length] = userArr[i];
         }
     }
     userArr = newArray;
-    renderUser()
     localStorage.setItem("user", JSON.stringify(userArr))
+    renderUser()
 }

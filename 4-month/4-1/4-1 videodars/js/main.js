@@ -16,6 +16,6 @@ const user = {
 // console.log(objectJSON);
 
 //? localStorage
-
 localStorage.setItem( "user" , JSON.stringify(user))
 
+console.log(localStorage);
