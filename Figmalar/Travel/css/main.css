@@ -17,10 +17,14 @@ body {
 
 
 /* NAVBAR  */
+
+.navbar {
+    background-image: url(/images/bg_hero.png);
+}
+
 .nav__wrapper {
-    padding: 0 20px;
     align-items: center;
-    margin-top: 80px;
+    padding: 50px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +35,7 @@ body {
 }
 
 .nav__list .nav__list-item {
-    padding: 18px 0;
+    padding: 120px 0;
     display: flex;
     list-style: none;
     gap: 50px;
@@ -75,7 +79,7 @@ body {
     display: none;
 }
 
-.menu__burger img {
+#menu__burger img {
     display: none;
 }
 
@@ -84,15 +88,17 @@ body {
 
 @media screen and (max-width: 1024px) {
 
-    /* .navbar {
-        position: relative;
-    } */
+
+
+    #menu__burger img {
+        display: block;
+    }
+
     .nav__wrapper {
         position: relative;
     }
 
     .nav__wrapper {
-        padding: 0 20px;
         display: flex;
     }
 
@@ -127,10 +133,6 @@ body {
         display: none;
     }
 
-
-    .menu__burger img {
-        display: block;
-    }
 
     .open {
         transform: translateX(0);
