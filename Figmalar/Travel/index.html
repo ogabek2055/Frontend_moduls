@@ -1,44 +1,703 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-elements container">
+        <nav class="header-nav">
+          <a href="#" class="nav-logo"
+            ><img src="./Images/nav-logo.png" alt="nav-logo"
+          /></a>
+          <ul class="navEL">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+              <span class="custom-dropdown small">
+                <select>
+                  <option>Sherlock Holmes</option>
+                  <option>The Great Gatsby</option>
+                  <option>V for Vendetta</option>
+                  <option>The Wolf of Wallstreet</option>
+                  <option>Quantum of Solace</option>
+                </select>
+              </span>
+            </li>
+            <li><a href="#">Upcomming Packages</a></li>
+          </ul>
+          <div class="nav-btn">
+            <a href="#" class="btn-vip">Get in Touch</a>
+          </div>
+          <label id="opener">
+            <img src="./Images/menu-header.svg" alt="" />
+          </label>
+        </nav>
+        <div class="header-hero">
+          <img src="./Images/hero-zigzag.png" alt="" />
+          <h2>
+            We are <span class="h2-Export">Expert</span> in
+            <span class="h2-Desert">
+              Desert Safari | Dubai & Abu Dhabi City Tour
+            </span>
+          </h2>
+          <div class="hero-selects">
+            <h3>Where to?</h3>
+            <div class="selects-palasa"></div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css
-    "> -->
-    <title>Travel</title>
-</head>
+            <div class="cont_select_cente">
+              <!-- Custom select structure -->
+              <div class="select_mate" data-mate-select="active">
+                <select name="" onchange="" onclick="return false;" id="">
+                  <option value="">Travel Type</option>
+                  <option value="1">Select option 1</option>
+                  <option value="2">Select option 2</option>
+                  <option value="3">Select option 3</option>
+                </select>
+                <p class="selecionado_opcion" onclick="open_select(this)"></p>
+                <span onclick="open_select(this)" class="icon_select_mate"
+                  ><svg
+                    fill="#000000"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+                    <path d="M0-.75h24v24H0z" fill="none" /></svg
+                ></span>
+                <div class="cont_list_select_mate">
+                  <ul class="cont_select_int"></ul>
+                </div>
+              </div>
+              <!-- Custom select structure -->
+            </div>
 
-<body>
-    <header class="navbar">
-        <div class="container nav__wrapper">
-            <img class="nav__logo" src="./images/logo.png" alt="travel__logo">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Uncomming Pages</a>
-                    </select>
-                </li>
-                <a class="nav__btn btn__res" href="#">
-                    Get in Touch
-                </a>
-            </ul>
-            <a class="nav__btn" href="#">
-                Get in Touch
-            </a>
-            <a id="menu__burger" href="#">
-                <img  style="width: 30px; height: 30px;" src="./images/bars-solid.svg" alt="">
-            </a>
+            <!-- End div center   -->
+            <div class="selects-palasa"></div>
+            <div class="cont_selectt">
+              <div>
+                <div class="select_mate" data-mate-select="active">
+                  <select name="" onchange="" onclick="return false;" id="">
+                    <option value="">Duration</option>
+                    <option value="1">Select option 1</option>
+                    <option value="2">Select option 2</option>
+                    <option value="3">Select option 3</option>
+                  </select>
+                  <p class="selecionado_opcion" onclick="open_select(this)"></p>
+                  <span onclick="open_select(this)" class="icon_select_mate"
+                    ><svg
+                      fill="#000000"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"
+                      />
+                      <path d="M0-.75h24v24H0z" fill="none" /></svg
+                  ></span>
+                  <div class="cont_list_select_mate">
+                    <ul class="cont_select_int"></ul>
+                  </div>
+                </div>
+                <!-- Custom select structure -->
+              </div>
+            </div>
+            <div class="hero-btn-div">
+              <a class="hero-btn" href="#">Submit</a>
+            </div>
+          </div>
         </div>
-
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js"></script> -->
-    <script src="./js/main.js"></script>
-</body>
+    <main>
+      <!-- section-choose start -->
+      <section class="section-choose">
+        <div class="choose-elements container">
+          <div class="choose-img">
+            <img src="./Images/choose-img.png" alt="" />
+          </div>
+          <div class="choose-texts">
+            <h3>Advantages</h3>
+            <h2>WHY CHOOSE US</h2>
+            <p>
+              Book Dubai Tours stands out as a premier tour operator for Dubai
+              Desert Safari , Dubai Tours, Dubai Dhow Cruise, Quad and Buggy
+              Drive Tour, in Dubai. We take pride in delivering
+              top-notch      service, offering you an immersive experience.We
+              cater to a diverse range of preferences, with tours and packages
+              that can be customized to fit your budget. From standard to
+              premium options, all our packages are designed to ensure your
+              satisfaction, making every penny spent worthwhile.
+            </p>
+            <div class="choose-btn">
+              <a href="#">View Packages</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-choose end -->
 
+      <!-- section-asked start -->
+      <section class="section-asked">
+        <div class="asked-elements container">
+          <div class="asked-texts">
+            <h3>FAQ</h3>
+            <h2>frequently asked question</h2>
+            <ul class="asked-lists">
+              <li class="asked-list-1">
+                <div class="asked-list-img1">
+                  <img src="./Images/asked-img1.png" alt="" />
+                </div>
+                <div class="asked-list-text1">
+                  <h3>Why the price Difference in Desert Safari packages ?</h3>
+                  <h4>
+                    We cater to a diverse range of preferences, with tours and
+                    packages that can be customized to fit your budget.
+                  </h4>
+                </div>
+              </li>
+              <li class="asked-list-2">
+                <div class="asked-list-img2">
+                  <img src="./Images/asked-img2.png" alt="" />
+                </div>
+                <div class="asked-list-text2">
+                  <h3>Dune Bashing place is red desert ?</h3>
+                  <h4>
+                    Yes, From standard to premium options, all our packages are
+                    designed to ensure your satisfaction, making every penny
+                    spent worthwhile.
+                  </h4>
+                </div>
+              </li>
+              <li class="asked-list-3">
+                <div class="asked-list-img3">
+                  <img src="./Images/asked-img2.png" alt="" />
+                </div>
+                <div class="asked-list-text3">
+                  <h3>What to wear during desert safari ?</h3>
+                  <h4>
+                    No Dress code But sun protection is Good for you.Sunscreen
+                    , sunglasses, scarf/SunHat and sneakers are good for
+                    summer.Sunscreen,sunglasses, SunHat/scarf, Sneakers and
+                    some warm clothes are good for winter.
+                  </h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="asked-hero-img">
+            <img
+              class="asked-hero-img1"
+              src="./Images/asked-hero-img.png"
+              alt=""
+            />
+            <!-- <img
+              class="asked-hero-img2"
+              src="./Images/asked-mobile-img.png"
+              alt=""
+            /> -->
+          </div>
+        </div>
+      </section>
+      <!-- section-asked end -->
+
+      <!-- section-amazing start -->
+      <section class="section-amazing">
+        <div class="amazing-elements container">
+          <h2>
+            Let’s make your <br />
+            next holiday amazing
+          </h2>
+          <div class="amazing-img">
+            <img src="./Images/amazing-line.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- section-amazing end -->
+
+      <!-- section-cancellation start -->
+      <section class="section-cancellation">
+        <div class="cancellation-elements container">
+          <div class="cancellation-text_img">
+            <div class="cancellation-texts">
+              <h3>Cancellation Policy</h3>
+              <h2>You Can Cancel Reservations Up to 12 hour</h2>
+              <p>
+                Cancellation of reservations before 12 hours won’t cost you
+                anything.Any cancellation made within 12 hours will be 50%
+                chargeable.The refund amount will reflect in your bank account
+                within seven days if you are eligible.
+              </p>
+              <div class="cancellation-btn">
+                <a href="#">View Packages</a>
+              </div>
+            </div>
+            <div class="cancellation-imgs">
+              <img src="./Images/cancellation-price-1.png" alt="" />
+              <img src="./Images/cancellation-price-2.png" alt="" />
+              <img src="./Images/cancellation-price-3.png" alt="" />
+              <img src="./Images/cancellation-price-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-cancellation end -->
+
+      <!-- section-paskages start -->
+      <!-- <section class="section-paskages">
+        <div class="paskages-elements container">
+          <div class="paskages-texts">
+            <h3>trendy</h3>
+            <h2>Our Trending Tour Packages</h2>
+          </div>
+          <ul class="paskages-lists">
+            <li>
+              <a href="#">
+                <div class="paskages-list-img">
+                  <img src="./Images/dubai-city-tour.png" alt="" />
+                </div>
+                <div class="paskages-list-text_1">
+                  <div class="paskages-list-text_1_t1">
+                    <img src="./Images/paskages-text_1-img_1.png" alt="" />
+                    <h5>8 Days</h5>
+                  </div>
+                  <div class="paskages-list-text_1_t2">
+                    <img src="./Images/paskages-text_1-img_2.png" alt="" />
+                    <h5>1 To 6 Person</h5>
+                  </div>
+                </div>
+                <div class="paskages-list-text_2">
+                  <h2>Dubai City Tour</h2>
+                </div>
+                <div class="paskages-list-text_3">
+                  <div class="paskages-list-text_3_img-1">
+                    <img
+                      src="./Images/paskages-list-text_3_img-location.png"
+                      alt=""
+                    />
+                    <h3>B.A.A</h3>
+                  </div>
+                  <div class="paskages-list-text_3_img-2">
+                    <img
+                      src="./Images/paskages-list-text_3_img-stars.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="paskages-list-text_4">
+                  <h2>600 AED</h2>
+                  <h3>780 AED</h3>
+                </div>
+                <div class="paskages-list-text_5_p">
+                  <p>
+                    Explore the Dubai Top landmarks which describe about
+                    heritage, beach and modern infrastructure and
+                    tourist attractions. And Pickup from your Hotel around
+                    around 8:30 AM to 9:00 AM Drop off Back to Hotel or Dubai
+                    Mall around 1:00 PM to 1:30 PM.
+                  </p>
+                </div>
+                <div class="paskages-btn">
+                  <a href="#" class="paskages-btn-a">Explore Now</a>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="paskages-list-img">
+                  <img src="./Images/exclusive-desert-safari.png" alt="" />
+                </div>
+                <div class="paskages-list-text_1">
+                  <div class="paskages-list-text_1_t1">
+                    <img src="./Images/paskages-text_1-img_1.png" alt="" />
+                    <h5>8 Days</h5>
+                  </div>
+                  <div class="paskages-list-text_1_t2">
+                    <img src="./Images/paskages-text_1-img_2.png" alt="" />
+                    <h5>1 To 6 Person</h5>
+                  </div>
+                </div>
+                <div class="paskages-list-text_2">
+                  <h2>Exclusive Desert Safari</h2>
+                </div>
+                <div class="paskages-list-text_3">
+                  <div class="paskages-list-text_3_img-1">
+                    <img
+                      src="./Images/paskages-list-text_3_img-location.png"
+                      alt=""
+                    />
+                    <h3>B.A.A</h3>
+                  </div>
+                  <div class="paskages-list-text_3_img-2">
+                    <img
+                      src="./Images/paskages-list-text_3_img-stars.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="paskages-list-text_4">
+                  <h2>600 AED</h2>
+                  <h3>780 AED</h3>
+                </div>
+                <div class="paskages-list-text_5_p">
+                  <p>
+                    Explore the Dubai Top landmarks which describe about
+                    heritage, beach and modern infrastructure and
+                    tourist attractions. And Pickup from your Hotel around
+                    around 8:30 AM to 9:00 AM Drop off Back to Hotel or Dubai
+                    Mall around 1:00 PM to 1:30 PM.
+                  </p>
+                </div>
+                <div class="paskages-btn">
+                  <a href="#" class="paskages-btn-a">Explore Now</a>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="paskages-list-img">
+                  <img src="./Images/abu-dhabi-city-tour.png" alt="" />
+                </div>
+                <div class="paskages-list-text_1">
+                  <div class="paskages-list-text_1_t1">
+                    <img src="./Images/paskages-text_1-img_1.png" alt="" />
+                    <h5>8 Days</h5>
+                  </div>
+                  <div class="paskages-list-text_1_t2">
+                    <img src="./Images/paskages-text_1-img_2.png" alt="" />
+                    <h5>To 1 Person</h5>
+                  </div>
+                </div>
+                <div class="paskages-list-text_2">
+                  <h2>Abu Dhabi City Tour</h2>
+                </div>
+                <div class="paskages-list-text_3">
+                  <div class="paskages-list-text_3_img-1">
+                    <img
+                      src="./Images/paskages-list-text_3_img-location.png"
+                      alt=""
+                    />
+                    <h3>B.A.A</h3>
+                  </div>
+                  <div class="paskages-list-text_3_img-2">
+                    <img
+                      src="./Images/paskages-list-text_3_img-stars.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="paskages-list-text_4">
+                  <h2>210 AED</h2>
+                  <h3>320 AED</h3>
+                </div>
+                <div class="paskages-list-text_5_p">
+                  <p>
+                    Explore the Dubai Top landmarks which describe about
+                    heritage, beach and modern infrastructure and
+                    tourist attractions. And Pickup from your Hotel around
+                    around 8:30 AM to 9:00 AM Drop off Back to Hotel or Dubai
+                    Mall around 1:00 PM to 1:30 PM.
+                  </p>
+                </div>
+                <div class="paskages-btn">
+                  <a href="#" class="paskages-btn-a">Explore Now</a>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="paskages-list-img">
+                  <img src="./Images/abu-dhabi-city-tour.png" alt="" />
+                </div>
+                <div class="paskages-list-text_1">
+                  <div class="paskages-list-text_1_t1">
+                    <img src="./Images/paskages-text_1-img_1.png" alt="" />
+                    <h5>8 Days</h5>
+                  </div>
+                  <div class="paskages-list-text_1_t2">
+                    <img src="./Images/paskages-text_1-img_2.png" alt="" />
+                    <h5>To 1 Person</h5>
+                  </div>
+                </div>
+                <div class="paskages-list-text_2">
+                  <h2>Abu Dhabi City Tour</h2>
+                </div>
+                <div class="paskages-list-text_3">
+                  <div class="paskages-list-text_3_img-1">
+                    <img
+                      src="./Images/paskages-list-text_3_img-location.png"
+                      alt=""
+                    />
+                    <h3>B.A.A</h3>
+                  </div>
+                  <div class="paskages-list-text_3_img-2">
+                    <img
+                      src="./Images/paskages-list-text_3_img-stars.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="paskages-list-text_4">
+                  <h2>210 AED</h2>
+                  <h3>320 AED</h3>
+                </div>
+                <div class="paskages-list-text_5_p">
+                  <p>
+                    Explore the Dubai Top landmarks which describe about
+                    heritage, beach and modern infrastructure and
+                    tourist attractions. And Pickup from your Hotel around
+                    around 8:30 AM to 9:00 AM Drop off Back to Hotel or Dubai
+                    Mall around 1:00 PM to 1:30 PM.
+                  </p>
+                </div>
+                <div class="paskages-btn">
+                  <a href="#" class="paskages-btn-a">Explore Now</a>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="paskages-lists">
+            <li>
+              <a href="#">
+                <div class="paskages-list-img">
+                  <img src="./Images/dubai-city-tour.png" alt="" />
+                </div>
+                <div class="paskages-list-text_1">
+                  <div class="paskages-list-text_1_t1">
+                    <img src="./Images/paskages-text_1-img_1.png" alt="" />
+                    <h5>8 Days</h5>
+                  </div>
+                  <div class="paskages-list-text_1_t2">
+                    <img src="./Images/paskages-text_1-img_2.png" alt="" />
+                    <h5>1 To 6 Person</h5>
+                  </div>
+                </div>
+                <div class="paskages-list-text_2">
+                  <h2>Dubai City Tour</h2>
+                </div>
+                <div class="paskages-list-text_3">
+                  <div class="paskages-list-text_3_img-1">
+                    <img
+                      src="./Images/paskages-list-text_3_img-location.png"
+                      alt=""
+                    />
+                    <h3>B.A.A</h3>
+                  </div>
+                  <div class="paskages-list-text_3_img-2">
+                    <img
+                      src="./Images/paskages-list-text_3_img-stars.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="paskages-list-text_4">
+                  <h2>600 AED</h2>
+                  <h3>780 AED</h3>
+                </div>
+                <div class="paskages-list-text_5_p">
+                  <p>
+                    Explore the Dubai Top landmarks which describe about
+                    heritage, beach and modern infrastructure and
+                    tourist attractions. And Pickup from your Hotel around
+                    around 8:30 AM to 9:00 AM Drop off Back to Hotel or Dubai
+                    Mall around 1:00 PM to 1:30 PM.
+                  </p>
+                </div>
+                <div class="paskages-btn">
+                  <a href="#" class="paskages-btn-a">Explore Now</a>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="paskages-list-img">
+                  <img src="./Images/exclusive-desert-safari.png" alt="" />
+                </div>
+                <div class="paskages-list-text_1">
+                  <div class="paskages-list-text_1_t1">
+                    <img src="./Images/paskages-text_1-img_1.png" alt="" />
+                    <h5>8 Days</h5>
+                  </div>
+                  <div class="paskages-list-text_1_t2">
+                    <img src="./Images/paskages-text_1-img_2.png" alt="" />
+                    <h5>1 To 6 Person</h5>
+                  </div>
+                </div>
+                <div class="paskages-list-text_2">
+                  <h2>Exclusive Desert Safari</h2>
+                </div>
+                <div class="paskages-list-text_3">
+                  <div class="paskages-list-text_3_img-1">
+                    <img
+                      src="./Images/paskages-list-text_3_img-location.png"
+                      alt=""
+                    />
+                    <h3>B.A.A</h3>
+                  </div>
+                  <div class="paskages-list-text_3_img-2">
+                    <img
+                      src="./Images/paskages-list-text_3_img-stars.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="paskages-list-text_4">
+                  <h2>600 AED</h2>
+                  <h3>780 AED</h3>
+                </div>
+                <div class="paskages-list-text_5_p">
+                  <p>
+                    Explore the Dubai Top landmarks which describe about
+                    heritage, beach and modern infrastructure and
+                    tourist attractions. And Pickup from your Hotel around
+                    around 8:30 AM to 9:00 AM Drop off Back to Hotel or Dubai
+                    Mall around 1:00 PM to 1:30 PM.
+                  </p>
+                </div>
+                <div class="paskages-btn">
+                  <a href="#" class="paskages-btn-a">Explore Now</a>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="paskages-list-img">
+                  <img src="./Images/abu-dhabi-city-tour.png" alt="" />
+                </div>
+                <div class="paskages-list-text_1">
+                  <div class="paskages-list-text_1_t1">
+                    <img src="./Images/paskages-text_1-img_1.png" alt="" />
+                    <h5>8 Days</h5>
+                  </div>
+                  <div class="paskages-list-text_1_t2">
+                    <img src="./Images/paskages-text_1-img_2.png" alt="" />
+                    <h5>To 1 Person</h5>
+                  </div>
+                </div>
+                <div class="paskages-list-text_2">
+                  <h2>Abu Dhabi City Tour</h2>
+                </div>
+                <div class="paskages-list-text_3">
+                  <div class="paskages-list-text_3_img-1">
+                    <img
+                      src="./Images/paskages-list-text_3_img-location.png"
+                      alt=""
+                    />
+                    <h3>B.A.A</h3>
+                  </div>
+                  <div class="paskages-list-text_3_img-2">
+                    <img
+                      src="./Images/paskages-list-text_3_img-stars.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="paskages-list-text_4">
+                  <h2>210 AED</h2>
+                  <h3>320 AED</h3>
+                </div>
+                <div class="paskages-list-text_5_p">
+                  <p>
+                    Explore the Dubai Top landmarks which describe about
+                    heritage, beach and modern infrastructure and
+                    tourist attractions. And Pickup from your Hotel around
+                    around 8:30 AM to 9:00 AM Drop off Back to Hotel or Dubai
+                    Mall around 1:00 PM to 1:30 PM.
+                  </p>
+                </div>
+                <div class="paskages-btn">
+                  <a href="#" class="paskages-btn-a">Explore Now</a>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="paskages-list-img">
+                  <img src="./Images/abu-dhabi-city-tour.png" alt="" />
+                </div>
+                <div class="paskages-list-text_1">
+                  <div class="paskages-list-text_1_t1">
+                    <img src="./Images/paskages-text_1-img_1.png" alt="" />
+                    <h5>8 Days</h5>
+                  </div>
+                  <div class="paskages-list-text_1_t2">
+                    <img src="./Images/paskages-text_1-img_2.png" alt="" />
+                    <h5>To 1 Person</h5>
+                  </div>
+                </div>
+                <div class="paskages-list-text_2">
+                  <h2>Abu Dhabi City Tour</h2>
+                </div>
+                <div class="paskages-list-text_3">
+                  <div class="paskages-list-text_3_img-1">
+                    <img
+                      src="./Images/paskages-list-text_3_img-location.png"
+                      alt=""
+                    />
+                    <h3>B.A.A</h3>
+                  </div>
+                  <div class="paskages-list-text_3_img-2">
+                    <img
+                      src="./Images/paskages-list-text_3_img-stars.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="paskages-list-text_4">
+                  <h2>210 AED</h2>
+                  <h3>320 AED</h3>
+                </div>
+                <div class="paskages-list-text_5_p">
+                  <p>
+                    Explore the Dubai Top landmarks which describe about
+                    heritage, beach and modern infrastructure and
+                    tourist attractions. And Pickup from your Hotel around
+                    around 8:30 AM to 9:00 AM Drop off Back to Hotel or Dubai
+                    Mall around 1:00 PM to 1:30 PM.
+                  </p>
+                </div>
+                <div class="paskages-btn">
+                  <a href="#" class="paskages-btn-a">Explore Now</a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+      <!-- section-paskages end -->
+
+      <!-- section-about start -->
+      <!-- <section class="section-about">
+        <div class="about-elements container">
+          <h3>Promotion</h3>
+          <h2>See What Our Clients Say About Us</h2>
+          <div class="about-slides">
+            <div class="about-slides-img">
+              <img src="./Images/about-opa_img.png" alt="" />
+            </div>
+            <div class="about-slides-texts">
+              <img src="./Images/about-left-strelka.png" alt="" />
+              <p>
+                The tour started at the arranged time, the Guide Bawa was very
+                kind and a really good driver on desert, special thanks to him
+                for the great photos he took after the...
+              </p>
+              <img src="./Images/about-rigth-strelka.png" alt="" />
+            </div>
+            <div class="about-slides-text-2">
+              <h3>Khizar Shakoor</h3>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- section-about end -->
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

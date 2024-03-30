@@ -4,25 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Random Players</title>
 </head>
 
 <body>
     <section class="main">
-        <center>
-            <form>
-                <input id="name" type="text" placeholder="Name">
-                <button class="btn" type="button" onclick="addBtn()">Add Players</button>
-                <button type="button" onclick="render()">Render Players</button>
-            </form>
-        </center>
+
+        <form>
+            <input id="name" type="text" placeholder="Name">
+            <button class="btn" type="button" onclick="addBtn()">Add Players</button>
+            <button class="random" type="button" onclick="render()">Render Players</button>
+        </form>
+
     </section>
     <section style="display: flex; justify-content: space-around;">
-        <h1>Team_1  =></h1>
         <ul id="renderedPly">
-
         </ul>
-        <h1>Team_2  =></h1>
         <ul id="renderedPly2">
         </ul>
     </section>

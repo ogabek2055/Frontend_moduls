@@ -1,6 +1,6 @@
 const fullname = document.getElementById("name")
 
-const playerArr = JSON.parse(localStorage.getItem("players")) || [];
+const playerArr = [];
 
 //! This function for adding players
 function addBtn() {
@@ -8,7 +8,7 @@ function addBtn() {
         fullname: fullname.value
     }
     playerArr.push(playerObj)
-    localStorage.setItem("players", JSON.stringify(playerArr))
+    // localStorage.setItem("players", JSON.stringify(playerArr))
     alert(playerObj.fullname + " jamoaga qoshildi!" + "  Jamoada: " + playerArr.length + " ta ishtirokchi bor !!!")
     console.log(playerArr);
     fullname.value = ""
