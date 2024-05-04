@@ -5,39 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <title>Wallet</title>
 </head>
 
-<body style="background-color: grey; display: flex; text-align: center; flex-direction: column;">
-    <header>
-        <div class="container nav__wrapper">
-            <div class="userName">
-                <h2>Good Morning</h2>
-                <h1>Ogabek</h1>
+<body>
+    <header class="row">
+        <div class="container py-4 px-4 col-md-4 nav_wrapper">
+            <div class="nav_info">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#nameModal">
+                    <h3>Beautiful Day</h3>
+                    <h1 id="myName">User</h1>
+                </button>
             </div>
-            <div class="balance">
-                <h3>Your Balance</h3>
-                <h2>Uzs: 20000 sum</h2>
-                <div  class="balance__btn">
-                    <button>+</button>
-                    <button>-</button>
+            <img class="nav_img" style="height: 100px; width: 100px; border-radius: 50%;" src="./images/image.png"
+                alt="">
+            <div class="modal fade" id="nameModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Change Name</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex align-items-center">
+                                <input class="changeNameInput mx-3" type="text" placeholder="New Name">
+                                <button class="btn btn-warning">Change</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section>
-            <div class="container cards__wrapper">
-                <ul class="cards__list">
-                    <li class="cards__list-item">
-                        <h3>Humo</h3>
-                        <h4>Balance: 40.000</h4>
-                    </li>
+        <!--! Hero section  -->
+        <section class="hero row">
+            <div class="container py-4 px-4 col-md-4 hero__wrapper">
+                <h3>Balance</h3>
+                <h2 id="balance">$0</h2>
+            </div>
+        </section>
+        <!--! end of Hero section  -->
+
+        <!--! Adding cards section-->
+        <section class="addCard row">
+            <div class="container py-4 px-4 col-md-4 addCard__wrapper">
+                <ul id="addCardRender" class="addCard__list">
                 </ul>
             </div>
         </section>
+        <!--! end of Adding cards section-->
+        <!--! Card Modal  -->
+        <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Card</h1>
+                        <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="addCardForm" id="addCardInfo">
+                            <input type="text" placeholder="Please enter Card">
+                            <input type="text" placeholder="Please enter Bank">
+                            <button type="submit" class="btn btn-warning">Add Card</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--! end of Modal  -->
+        <!--! Price Modal  -->
+        <div class="modal fade" id="priceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Price</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="addCardForm" id="addCardPrice">
+                            <input type="number" placeholder="Please enter Price">
+                            <button class="btn btn-warning">Add Price</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--! Buttons section  -->
+        <section class="btns row">
+            <div class="container py-4 px-4 col-md-4 btns__wrapper">
+                <button class="deposit">Deposit</button>
+                <button class="add-card-btn btn" data-bs-toggle="modal"
+                data-bs-target="#cardModal">
+                <img class="addImg" src="./images/add.svg" alt="add">
+            </button>
+                <button class="withdraw">Withdraw</button>
+            </div>
+        </section>
+        <!--! end of Buttons section  -->
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

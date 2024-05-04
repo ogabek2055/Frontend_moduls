@@ -1,0 +1,194 @@
+.headphone {
+    background-image: url(/images/bg_headphone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50vw top;
+    background-color: black;
+}
+.headphone__title {
+    display: flex;
+    gap: 30px;
+    // justify-content: space-between;
+    padding-top: 200px;
+}
+.headphone__info {
+    margin-left: 70px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        color: white;
+        font-family: Poppins;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 72px;
+        max-width: 543px;
+    }
+    p {
+        color: white;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        margin: 24px 0 20px;
+    }
+    .colors {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    span {
+        color: white;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 24px;
+        margin: 10px 0 24px;
+    }
+}
+.headphone__price {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    gap: 104px;
+    h3 {
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    a {
+        color: black;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        padding: 15px 50px;
+        background: white;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        &:hover {
+            background: orange;
+        }
+    }
+}
+.headphones {
+    padding: 200px 0 120px;
+    .q {
+        color: white;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+.ull {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.headphones__list {
+    max-width: 1025px;
+    overflow-y: scroll;
+    gap: 55px;
+    scrollbar-width: none;
+    margin-top: 90px;
+    display: flex;
+}
+@include tablet() {
+    .headphone {
+        background-position: left calc(-100px);
+        background-size: unset;
+    }
+    .headphone__title {
+        gap: 10px;
+        padding-top: 150px;
+        .headphone_img {
+            width: 330px;
+        }
+    }
+    .headphone__info {
+        margin-left: 40px;
+        h2 {
+            font-size: 50px;
+            text-align: center;
+            line-height: 65px;
+        }
+    }
+    .headphone__price {
+        // justify-content: space-between;
+        gap: 70px;
+    }
+
+    .headphones {
+        padding: 170px 0 100px;
+        .q {
+            font-size: 35px;
+        }
+    }
+    .ull {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .headphones__list {
+        max-width: 768px;
+        overflow-y: scroll;
+        gap: 40px;
+        margin-top: 90px;
+    }
+}
+
+@include mobile() {
+    .headphone {
+        background-position: top;
+        background-size: auto;
+    }
+    .headphone__title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .headphone__info {
+        margin-left: 0;
+        padding-top: 0;
+        h2 {
+            font-size: 35px;
+            line-height: 60px;
+        }
+    }
+    .colors {
+        justify-content: center;
+    }
+    .headphone__price {
+        display: block;
+        h3 {
+            line-height: 70px;
+        }
+        a {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 14px;
+            padding: 10px 30px;
+        }
+    }
+    .headphone_img {
+        margin-top: 50px;
+        width: 250px;
+    }
+    .headphones {
+        padding: 130px 0 100px;
+        align-items: center;
+    }
+    .headphones__list {
+        height: 600px;
+        overflow-x: scroll !important;
+        flex-direction: column;
+    }
+    .headphones__list-item {
+        img {
+            width: 215px;
+        }
+    }
+}

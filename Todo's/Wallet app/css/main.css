@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,23 +8,235 @@
 }
 
 body {
-    font-family: sans-serif;
-    text-shadow: 4px 5px 4px;
+    font-family: "Inter";
+    /* box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25); */
+    background: radial-gradient(77.47% 239.63% at 250% -17%, rgba(13, 11, 49, 0.99), rgba(184, 180, 255, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , radial-gradient(108.89% 366.96% at -206% 139%, rgba(11, 9, 46, 0.55), rgba(184, 180, 255, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , rgb(7, 6, 40) !important;
+    overflow: hidden;
 }
 
-.nav__wrapper {
+header,
+main,
+footer {}
+
+/* .container {
+    /* border-radius: 40px; */
+/* max-width: 414px; */
+/* margin: 0 auto; */
+
+/* } */
+
+/*? Navbar  */
+.nav_img {
+    box-shadow: 1px 2px 20px 1px rgb(0, 247, 255);
+
+}
+
+#myName {
+    border: none;
+    margin-top: 15px;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 1px 0px rgb(0, 247, 255);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+#myName:hover {
+    box-shadow: 0px -3px 0px 1px rgb(0, 247, 255);
+}
+
+
+.changeNameInput {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    /* outline: none; */
+}
+
+
+
+.nav_wrapper {
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.nav_info h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    opacity: 0.6;
+}
+
+.nav_info h1 {
+    color: rgb(255, 255, 255);
+}
+
+/*? end of Navbar */
+
+/*? Hero */
+.hero__wrapper h3 {
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+}
+
+.hero__wrapper h2 {
+    color: rgb(255, 255, 255);
+}
+
+/*? end of hero  */
+
+
+/*? Cards */
+.addCardForm {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.addCardForm input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline-color: red;
+}
+
+.addCard__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    padding-left: 0rem;
+    gap: 10px;
+    overflow-x: scroll;
+    height: 200px;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.addCard__list-item {
+    display: flex;
+    justify-content: space-between;
+    width: 196px;
+    height: 156px;
+    transition: all 0.4s ease;
+
+}
+
+.addCard__list-item:hover {
+    box-shadow: 0px 0px 5px 1px blue;
+}
+
+
+.addCard__list-item .priceInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.priceInfo h4 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.priceInfo h5 {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    opacity: 0.6;
+}
+
+.shownPrice h4 {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.item-adding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 196px !important;
+    height: 156px !important;
+    border-radius: 18px;
+    backdrop-filter: blur(80px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.item-adding .addImg {
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 1px 40px 3px blue;
+}
+
+/*? end of Cards */
+
+
+/*? btns  */
+
+.btns__wrapper {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
     gap: 30px;
 }
 
-.userName {
-    margin-top: 50px;
-    color: aliceblue;
+.btns__wrapper button {
+    padding: 15px 41px;
+    border-radius: 18px;
+    border: none;
+    color: white;
 }
 
-.cards__wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+.deposit {
+    background: rgb(69, 182, 141);
+    transition: 0.4s;
 }
+
+.deposit:hover {
+    background: rgb(0, 255, 162);
+    box-shadow: 1px 2px 20px 1px rgb(0, 247, 255);
+
+}
+
+.withdraw {
+    background: rgb(232, 80, 58);
+    transition: 0.4s;
+
+}
+
+.withdraw:hover {
+    background: rgb(255, 130, 110);
+    box-shadow: 1px 2px 20px 1px rgb(0, 247, 255);
+
+}
+
+/*? end of btns  */
+
+
+/* 
+::-webkit-scrollbar {
+    width: 5px;
+} */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOILA SRM</title>
+</head>
+
+<body>
+
+    <style>
+        #signUp,
+        #signIn {
+            display: none;
+        }
+
+        .show {
+            display: block !important;
+        }
+    </style>
+
+
+
+    <div id="signUp" class="show">
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" placeholder="fullname">
+            <input type="tel" placeholder="Phone Number">
+            <input type="password" placeholder="password">
+            <button>Sign Up</button>
+
+            <p>If you have an account click <ins id="ins">here</ins></p>
+        </form>
+    </div>
+
+    <div id="signIn">
+        <h2>Sign In</h2>
+        <form>
+            <input type="tel" placeholder="Phone Number">
+            <input type="password" placeholder="password">
+            <button>Sign In</button>
+            <p>If you have an account click <ins id="ins">here</ins></p>
+        </form>
+    </div>
+    <script src="./js/register.js"></script>
+</body>
+
+</html>

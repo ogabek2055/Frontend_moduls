@@ -1,0 +1,200 @@
+.nav__wrapper {
+    padding-top: 74px;
+    display: flex;
+    align-items: center;
+    gap: 153px;
+}
+.nav__logo {
+    margin-top: 50px;
+    flex-grow: 1;
+    width: 164.78px;
+    height: 26.62px;
+}
+.open {
+    transform: translateX(0);
+}
+.nav__info {
+    padding: 10px 30px;
+    text-decoration: none; border-radius: 20px;
+    background: rgb(32, 32, 32); color: rgb(255, 255, 255);
+    font-family:"Montserrat";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        box-shadow: 0px 0px 10px 10px;
+    }
+}
+.nav__info2 {
+    display: none;
+    padding: 10px 30px;
+    text-decoration: none; border-radius: 20px;
+    background: rgb(32, 32, 32); color: rgb(255, 255, 255);
+    font-family:"Montserrat";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        box-shadow: 0px 0px 10px 10px;
+    }
+}
+.nav__list {
+    list-style: none;
+}
+.nav__list-item  {
+    display: flex;
+    gap: 22px;
+    & a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    transition: all 0.4s ease;
+  &:hover {
+    color: rgb(159, 159, 159);
+    text-decoration: underline;
+  }    
+}
+}
+.menu {
+display: none;
+width: 40px;
+height: 40px;
+}
+@include mobile() {
+    .navbar {
+        position: relative;
+    }
+    .nav__wrapper {
+        position: relative;
+        padding: 0  20px;
+    }
+    .nav__logo {
+        z-index: 999;
+    }
+    .nav__list {
+        transform: translateX(-100%);
+        position: absolute;
+        background: rgb(102, 102, 102);
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+    }
+    .nav__list-item {
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .nav__list-item  .nav__list-link {
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 40px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .nav__info2 {
+        white-space: nowrap;
+        display: block;
+        font-weight: 700 !important;
+        flex-wrap: nowrap;
+        padding: 5px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav__info {
+        display: none;
+        transform: translateY(-100%);
+        z-index: 999;
+        position: absolute;
+        top: 250%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease-in-out;;
+        &:hover {
+            box-shadow: 0px 0px 10px 10px;
+        }
+    }
+    .menu img {
+        display: block;
+       background-color: white !important;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@include tablet() {
+    .navbar {
+        position: relative;
+    }
+    .nav__wrapper {
+        position: relative;
+        padding: 0  20px;
+    }
+    .nav__logo {
+        z-index: 999;
+    }
+    .nav__list {
+        transform: translateX(-100%);
+        position: absolute;
+        background: rgb(102, 102, 102);
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+    }
+    .nav__list-item {
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    .nav__list-item  .nav__list-link {
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 40px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .nav__info2 {
+        display: block;
+        font-weight: 700 !important;
+        flex-wrap: nowrap;
+        padding: 5px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav__info {
+        display: none;
+        z-index: 999;
+        position: absolute;
+        top: 250%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease-in-out;
+    &:hover {
+        box-shadow: 0px 0px 10px 10px;
+    }
+    }
+
+}
