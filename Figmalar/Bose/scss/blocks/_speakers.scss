@@ -1,0 +1,107 @@
+.speakers {
+    background-image: url(/images/bg_speakers.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.speakers__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200px 0 100px;
+}
+.speakers__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 62px;
+        max-width: 455px;
+        text-align: center;
+    }
+    p {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 62px;
+        max-width: 455px;
+        text-align: center;
+    }
+    a {
+        color: rgb(0, 0, 0);
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 6%;
+        padding: 12px 35px;
+        text-align: center;
+        border-radius: 50px;
+        background: rgb(255, 255, 255);
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: orange;
+        }
+    }
+}
+
+@include tablet() {
+    .speakers__title {
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 57px;
+        }
+        p {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 57px;
+        }
+        a {
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 6%;
+            padding: 10px 30px;
+        }
+    }
+    .speakers__img {
+        img {
+            width: 500px;
+        }
+    }
+}
+
+@include mobile() {
+    .speakers__wrapper {
+        flex-direction: column;
+    }
+    .speakers__img {
+        img {
+            margin-top: 50px;
+            width: 250px;
+        }
+    }
+    .speakers__title {
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 55px;
+        }
+        p {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 55px;
+        }
+        a {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 6%;
+            padding: 8px 25px;
+        }
+    }
+}

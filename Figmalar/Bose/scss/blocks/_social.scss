@@ -1,0 +1,38 @@
+.social {
+    background: rgb(30, 30, 30);
+}
+
+.social__title {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social__title1 {
+    display: flex;
+    align-items: center;
+    gap: 89px;
+}
+.social__title2 {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    span {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 6%;
+        text-align: center;
+    }
+}
+@include mobile() {
+    .social__title {
+        gap: 35px;
+        flex-direction: column;
+    }
+    .social__title2 {
+        gap: 90px;
+        flex-direction: column;
+    }
+}

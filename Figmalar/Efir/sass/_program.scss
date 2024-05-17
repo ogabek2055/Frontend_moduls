@@ -1,0 +1,327 @@
+.program-efir {
+  width: 330px;
+  height: 576px;
+  padding: 25px;
+
+  background-color: #FFFFFF;
+
+  @include mobile() {
+    width: 350px;
+  }
+}
+.efir {
+  padding-top: 30px;
+}
+.efir-title {
+  padding-top: 20px;
+  font-family: Proxima Nova;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+}
+.text {
+  display: flex;
+  gap: 20px;
+}
+.efir-op {
+  padding-top: 20px;
+}
+.e-texts {
+  display: flex;
+  gap: 3px;
+  img {
+    padding-top: 20px;
+  }
+}
+.e-pro {
+  align-items: center;
+  padding-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+.e-pro-title {
+  width: Hug (40px) px;
+  height: Hug (15px) px;
+  top: 313px;
+  left: 25px;
+  gap: 10px;
+  opacity: 0px;
+}
+.e-pro-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 15px;
+
+  color: #524f4a;
+  span {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 13px;
+    text-align: left;
+    color: #ec9605;
+  }
+}
+.efir-ca {
+  display: flex;
+  gap: 30px;
+  @include mobile() {
+    flex-direction: column;
+  }
+}
+.e-subs {
+  height: 400px;
+  overflow: scroll;
+  scrollbar-color: orange orange;
+  scrollbar-width: thin;
+}
+.e-live {
+  padding-left: 10px;
+  border-radius: 8px;
+  background: #013fbe;
+  width: 188px;
+  height: 80px;
+  top: 140px;
+  border-radius: 8px;
+  button {
+    margin-top: 5px;
+    margin-left: 120px;
+  }
+}
+.e-lives {
+  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #013fbe;
+  width: 188px;
+  height: 80px;
+  top: 140px;
+  border-radius: 8px;
+  button {
+    margin-top: 5px;
+    margin-left: 130px;
+  }
+}
+.e-lived {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #ec9605;
+
+  width: 188px;
+  height: 80px;
+  top: 140px;
+  border-radius: 8px;
+}
+.btn-live {
+  top: 5px;
+  left: 138px;
+  padding: 3px 10px;
+  border-radius: 55px;
+  background: #16ba57;
+  border: none;
+}
+.live-title {
+  padding-top: 13px;
+
+  width: 135px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: #ffffff;
+}
+.lived-title {
+  padding-top: 13px;
+
+  width: 135px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: #ffffff;
+}
+.lives-title {
+  padding-top: 13px;
+
+  width: 140px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: #ffffff;
+}
+.live-subtitle {
+  padding-top: 9px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color: #ffffff;
+}
+.ef-me {
+  display: flex;
+  gap: 28px;
+  @include mobile() {
+    overflow: scroll;
+  }
+}
+.e-slider {
+  padding-top: 30px;
+  img {
+    @include mobile() {
+      width: 350px;
+      height: 200px;
+    }
+  }
+}
+.slide_images {
+  width: 200px;
+  @include mobile() {
+    width: 343px;
+    height: 200px;
+    top: 322px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+  }
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 480px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  @include mobile() {
+    width: 343px;
+    height: 200px;
+  }
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul.slides input {
+  display: none;
+}
+
+.slide-container {
+  display: block;
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.slide-image img {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+  @include mobile() {
+    max-width: 350px;
+    height: 200px;
+  }
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label {
+  opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+
+}
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+  display: block;
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+  opacity: 1;
+}
+
+input:checked + .slide-container .nav label {
+  display: block;
+}
